@@ -13,7 +13,7 @@ int main(void) //arreglos unidimensionales para la matriz [Nx][Ny]
 
   for (int ii=0; ii<Nx;++ii){ //Se esta fijando el i y luego se esta corriendo en j, si el for se hace al reves el codigo es mas lento.
     for (int j=0; j<Ny;++j){
-      A[ii*Ny+j]=ii*j; //Se cambia la forma de acceder al arreglo porque es unidimensional
+      A[ii*Ny+j]=2*ii+j; //Se cambia la forma de acceder al arreglo porque es unidimensional
     }
   }
 
@@ -34,11 +34,12 @@ int main(void) //arreglos unidimensionales para la matriz [Nx][Ny]
   
    for(int ii=0;ii<Nx;++ii){
     for(int j=0; j<Ny;++j){
-      std::cout<<At[ii*Ny+j]<<" ";
+      std::cout<<At[ii*Nx+j]<<" ";
 	}
     std::cout<<std::endl;
      }
    std::cout<<'\n';
-  return 0;
+
+   return 0;
 }
   
